@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Nomes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Nomes</h1>
+
+    <!-- Formulário de Adição -->
+    <div class="form-section">
+      <input type="text" id="nome" placeholder="Digite um nome">
+      <button onclick="adicionarNome()">Adicionar Nome</button>
+    </div>
+
+    <!-- Botão de Listar -->
+    <div class="form-section">
+      <button onclick="listarNomes()">Listar Todos os Nomes</button>
+    </div>
+
+    <!-- Campo de Busca -->
+    <div class="form-section">
+      <input type="text" id="busca" placeholder="Buscar nome">
+      <button onclick="buscarNome()">Buscar</button>
+      <p id="resultado-busca"></p>
+    </div>
+
+    <!-- Lista de Nomes -->
+    <h2>Lista de Nomes:</h2>
+    <ul id="lista-nomes"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
